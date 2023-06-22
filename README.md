@@ -1,3 +1,5 @@
+Different BPF CO-RE programs for defensive and offsensive security purposes. This repository will primarily contain LSM BPF but will include other BPF types.
+
 **Compilation Instructions**
 ```
 clang -g -O2 -target bpf  -D__TARGET_ARCH_x86_64 -I . -c restrict_imds_no_root.bpf.c -o restrict_imds_no_root.bpf.o
