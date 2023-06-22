@@ -9,8 +9,6 @@ clang -Wall -O2 -g restrict_imds_no_root.o libbpf/build/libbpf/libbpf.a -lelf -l
 ```
 **To run**
 ```
+Linux capabilities needed are CAP_BPF + CAP_PERFMON 
 sudo ./restrict_imds_no_root
-or 
-sudo setcap cap_bpf,cap_perfmon+eip ./restrict_imds_no_root
-./restrict_imds_no_root
 ```
